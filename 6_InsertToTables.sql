@@ -1,10 +1,10 @@
 use hoteldb;
 
-insert into hotel (name, address, city, state, country, zipcode) VALUES ('Hilton hotel','1170 Spring St, Elizabeth','Newark','New Jersey','United States','07201');
-insert into hotel (name, address, city, state, country, zipcode) VALUES ('Holiday Inn','585 8th Ave', 'New York','New York','United States','10018');
-insert into hotel (name, address, city, state, country, zipcode) VALUES ('Governor hotel','86-90 Park Ln','London','','England','W1K 7TN');
-insert into hotel (name, address, city, state, country, zipcode) VALUES ('New World hotel','72 Mody Rd, Tsim Sha Tsui','Hong Kong','','China','999077');
-insert into hotel (name, address, city, state, country, zipcode) VALUES ('The Manila Hotel','1 Rizal Park','Manila','Metro Manila','Philippines','0913');
+insert into hotel (name, address, city, stateCd, countryCd, zipCd) VALUES ('Hilton hotel','1170 Spring St, Elizabeth','Newark','NJ','US','07201');
+insert into hotel (name, address, city, stateCd, countryCd, zipCd) VALUES ('Holiday Inn','585 8th Ave', 'New York','NY','US','10018');
+insert into hotel (name, address, city, stateCd, countryCd, zipCd) VALUES ('Hilton Hawaiian Hotel','2005 Kālia Rd','Honolulu','HI','US','96815');
+insert into hotel (name, address, city, stateCd, countryCd, zipCd) VALUES ('Caesars Palace','3570 S Las Vegas Blvd','Las Vegas','NV','US','89109');
+insert into hotel (name, address, city, stateCd, countryCd, zipCd) VALUES ('Double Tree Hotel','128 Frontage Rd','Newark','NJ','US','07114');
 
 insert into room(roomNo, hotelNo, type, price) values (1,1,'Family',200);
 insert into room(roomNo, hotelNo, type, price) values (2,1,'Family',200);
@@ -30,22 +30,22 @@ insert into room(roomNo, hotelNo, type, price) values (2,5,'Double',38);
 insert into room(roomNo, hotelNo, type, price) values (3,5,'Single',32);
 insert into room(roomNo, hotelNo, type, price) values (4,5,'Single',32);
 
-insert into guest(name, address, city, state, country, zipcode) values ('John Doe','W 3rd St','Los Angeles','California','United States','90020');
-insert into guest(name, address, city, state, country, zipcode) values ('Mary Jane','74 S 8th St','Brooklynn','New York','United States','11249');
-insert into guest(name, address, city, state, country, zipcode) values ('Hank Kim','59 Arthur Rd','London','','United Kingdom','N7 6DT');
-insert into guest(name, address, city, state, country, zipcode) values ('Bob Jones','143 Osbaldeston Rd','London','','United Kingdom','N16 6ND');
-insert into guest(name, address, city, state, country, zipcode) values ('Paul John','65 Pitt St','New York','New York','United States','10002');
-insert into guest(name, address, city, state, country, zipcode) values ('Ann Smith','32 Cliff St','New York','New York','United States','10038');
-insert into guest(name, address, city, state, country, zipcode) values ('James Mann','21C Gayton Rd','London','','United Kingdom','NW3 1TY');
-insert into guest(name, address, city, state, country, zipcode) values ('Mary Mann','42 Darenth Rd','London','','United Kingdom','N16 6EJ');
-insert into guest(name, address, city, state, country, zipcode) values ('Jim Jones','545 Greenwich St','New York','New York','United States','10013');
-insert into guest(name, address, city, state, country, zipcode) values ('Tom Jones','10600 Wilshire Blvd','Los Angeles','California','United States','90024');
-insert into guest(name, address, city, state, country, zipcode) values ('Jimmy Johnson','63 Rutland St','Boston','Massachusetts','United States','02118');
-insert into guest(name, address, city, state, country, zipcode) values ('Harry Coleman','3709 Park Ln','Dallas','Texas','United States','75220');
-insert into guest(name, address, city, state, country, zipcode) values ('Bob James','939 Manning Ave','Los Angeles','California','United States','90024');
-insert into guest(name, address, city, state, country, zipcode) values ('John Mary','39A Highbury Park','London','','United Kingdom','N5 1TH');
-insert into guest(name, address, city, state, country, zipcode) values ('Jeff Bridges','13D Stavordale Rd','London','','United Kingdom','N5 1NE');
-insert into guest(name, address, city, state, country, zipcode) values ('Larry Cohen','147 E 82nd St','New York','New York','United States','10028');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('John Doe','W 3rd St','Los Angeles','CA','US','90020');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Mary Jane','74 S 8th St','Brooklynn','NY','US','11249');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Hank Kim','59 Arthur Rd','Irvine','CA','US','92122');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Bob Jones','143 River Rd','Santa Ana','CA','US','92020');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Paul John','65 Pitt St','New York','NY','US','10002');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Ann Smith','32 Cliff St','New York','NY','US','10038');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('James Mann','21 Canyon Rd','San Diego','CA','US','91232');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Mary Mann','42 Ford Dr','San Diego','CA','US','93500');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Jim Jones','545 Greenwich St','New York','NY','US','10013');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Tom Jones','10600 Wilshire Blvd','Los Angeles','CA','US','90024');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Jimmy Johnson','63 Rutland St','Boston','MA','US','02118');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Harry Coleman','3709 Park Ln','Dallas','TX','US','75220');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Bob James','939 Manning Ave','Los Angeles','CA','US','90024');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('John Mary','39A Highbury Park','New York','NY','US','10010');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Jeff Bridges','13D Stavordale Rd','New York','NY','US','10015');
+insert into guest(name, address, city, stateCd, countryCd, zipCd) values ('Larry Cohen','147 E 82nd St','New York','NY','US','10028');
 
 insert into booking(hotelNo, guestNo, dateFrom, dateTo, roomNo) values(1,1,'2021-09-05','2021-09-10',1);
 insert into booking(hotelNo, guestNo, dateFrom, dateTo, roomNo) values(1,2,'2020-10-01','2020-10-04',2);
